@@ -1,4 +1,4 @@
-Few Tools for CellVit
+Few Tools for [CellVit](https://github.com/TIO-IKIM/CellViT)
 
 split_svs.py
 (Splits SVS files into 4 parts. Since WSIs are extremely large, the output JSON files can sometimes be too big to open on some PCs.)
