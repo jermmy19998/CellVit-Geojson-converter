@@ -1,14 +1,14 @@
 import os
 import shutil
 
-# 原始目录和目标目录
-src_dir = "/mnt/raid/zanzhuheng/working/ESCC-2025-03-07/quadrants_svs"
-dst_dir = "/mnt/raid/zanzhuheng/working/ESCC-2025-03-07/quadrants_tiff2svs"
+# Define source and destination directories
+src_dir = "path/to/quadrants_svs"        
+dst_dir = "path/to/quadrants_tiff2svs"    
 
-# 创建目标目录（如果不存在）
+# Create the destination directory if it doesn't exist
 os.makedirs(dst_dir, exist_ok=True)
 
-# 遍历原始目录中的所有文件
+# Iterate over all files in the source directory
 for filename in os.listdir(src_dir):
     if filename.lower().endswith(".tiff"):
         src_path = os.path.join(src_dir, filename)
@@ -16,4 +16,4 @@ for filename in os.listdir(src_dir):
         dst_path = os.path.join(dst_dir, new_filename)
         shutil.copy2(src_path, dst_path)
 
-print("转换完成。")
+print("Conversion completed.")
