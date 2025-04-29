@@ -5,7 +5,7 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Define input and output directories
-input_dir = 'path/to/input_directory'  # e.g., '/mnt/raid/zanzhuheng/working/ESCC-2025-03-07'
+input_dir = 'path/to/input_directory'  
 output_dir = os.path.join(input_dir, 'quadrants_svs')
 os.makedirs(output_dir, exist_ok=True)
 
